@@ -39,7 +39,7 @@
     text-align: center;
 }
 
-.img {
+img {
     width: 100%;
 }
 
@@ -132,6 +132,42 @@ header .section_container {
      background-color: var(--primary-color-dark);
 }
 
+
+
+
+.journey_container {
+    background-color: var(--secondary-color);
+}
+
+.journey_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.country_card {
+    background-color: var(--extra-light);
+}
+
+.country_name {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.country_name i {
+    font-size: 1.2rem;
+}
+
+.country_name span {
+    font-style: italic;
+}
+
+
 @media (min-width: 640px) {
     .nav_links {
         display: flex;
@@ -148,5 +184,10 @@ header .section_container {
 
     .header_content p {
         text-align: left;
+    }
+
+    .journey_grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 }
